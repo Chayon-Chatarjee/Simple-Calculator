@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="images/logo.png">
+</head>
+
+<body>
+  <div class="calculator">
+    <input type="text" id="display" readonly />
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="appendValue('/')">/</button>
+      <button onclick="appendValue('*')">×</button>
+      <button onclick="deleteLast()">←</button>
+
+      <button onclick="squareRoot()">√</button>
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+
+      <button onclick="appendValue('-')">-</button>
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+
+      <button onclick="appendValue('+')">+</button>
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+
+      <button onclick="calculate()">=</button>
+      <button onclick="appendValue('0')" class="zero">0</button>
+      <button onclick="appendValue('.')">.</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+<div class="description">
+    <h1><br><br><br><br>
+        🧮 Simple Calculator — Functions & Guide
+    </h1>
+    <h2>
+        This is a simple calculator for basic and advanced arithmetic. 
+        It functions like a standard handheld calculator, letting you 
+        perform operations such as addition, subtraction, multiplication, 
+        division, square root, and more.You can control the calculator 
+        using a mouse, keyboard, number pad, or touch if
+        supported on your device
+    </h2>
+<pre class="computer">
+<i class="fa-solid fa-screwdriver-wrench"></i> What Can This Calculator Do?
+
+<i class="fa-solid fa-sliders"></i> Button Function Description
+
+01) ÷   <i class="fa-regular fa-circle-right"></i>   Division – divides one number by another.
+
+02) ×   <i class="fa-regular fa-circle-right"></i>   Multiplication – multiplies numbers.
+
+03) +   <i class="fa-regular fa-circle-right"></i>   Addition – adds numbers together.
+
+04) −   <i class="fa-regular fa-circle-right"></i>   Subtraction – subtracts one number from another.
+
+05) =   <i class="fa-regular fa-circle-right"></i>   Calculate – evaluates the full expression.
+
+06) C  <i class="fa-regular fa-circle-right"></i>   Clear – clears the entire display.
+
+07) ← <i class="fa-regular fa-circle-right"></i>   Backspace – deletes the last digit.
+
+08) .    <i class="fa-regular fa-circle-right"></i>   Decimal – allows input of decimal numbers (e.g., 3.14).
+
+09) √   <i class="fa-regular fa-circle-right"></i>   Square Root – computes the square root of a number.
+</pre>
+<pre class="phone">
+
+</pre>
+</div>
+</html>

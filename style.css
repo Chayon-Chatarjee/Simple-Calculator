@@ -1,0 +1,252 @@
+@media screen and (min-width: 1200px)  {
+  html{
+      margin-left: 150px;
+      margin-right: 150px ;
+  }       
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+    
+  }
+
+  .calculator {
+    background: #e7e4e4;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 320px;
+  }
+
+  #display {
+    width: 93%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #684f4f;
+    border-radius: 6px;
+    background-color: #f1ecec;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  button {
+    border: 1px solid #FAF6E9;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #ececec;
+    transition: background 0.2s;
+  }
+
+  button:hover {
+    background-color: #d1d1d1;
+  }
+
+  .zero {
+    grid-column: span 2;
+  }
+
+  h1{
+      padding-left: 200px;
+  }
+
+
+  h2{
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 200px;
+      width: 70%;
+      align-items: justify;
+      font-size: 20px;
+  }
+  pre{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+      padding-left: 200px;
+      font-weight: bolder;
+  }
+  .phone{
+    display: none;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 799px) {
+  html {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: center;
+    align-items: flex-start; /* Align top of calculator and text */
+    gap: 20px; /* Space between calculator and text */
+    padding: 20px;
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: auto; /* allow scrolling if content is tall */
+    flex-wrap: wrap; /* wrap on small screens */
+  }
+
+  .calculator {
+    background: #e7e4e4;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    flex-shrink: 0; /* Don't shrink calculator */
+  }
+
+  #display {
+    width: 93%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #684f4f;
+    border-radius: 6px;
+    background-color: #f1ecec;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  button {
+    border: 1px solid #FAF6E9;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #ececec;
+    transition: background 0.2s;
+  }
+
+  button:hover {
+    background-color: #d1d1d1;
+  }
+
+  .zero {
+    grid-column: span 2;
+  }
+
+  /* Container for heading and description */
+  .description {
+
+    padding: 10px;
+  }
+
+  .description h1 {
+    font-size: 20px;
+  }
+
+  .description h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: left;
+
+    
+  }
+
+  .description pre {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+  .computer{
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1199px) {
+  html {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  body {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    background: #f2f2f2;
+    font-family: Arial, sans-serif;
+    
+  }
+
+  .calculator {
+    background: #e7e4e4;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    height: 460px;
+  }
+
+  #display {
+    width: 93%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #684f4f;
+    border-radius: 6px;
+    background-color: #f1ecec;
+  }
+
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+  }
+
+  button {
+    border: 1px solid #FAF6E9;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #ececec;
+    transition: background 0.2s;
+  }
+
+  button:hover {
+    background-color: #d1d1d1;
+  }
+
+  .zero {
+    grid-column: span 2;
+  }
+
+  h1, h2, pre {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  h2 {
+    width: 70%;
+    font-size: 20px;
+  }
+
+  pre {
+    font-size: 18px;
+    font-weight: bolder;
+  }
+
+  .phone {
+    display: none;
+  }
+}
+
